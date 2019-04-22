@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Semillero HBT [EAR]
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Usuario
+BuildTime: 08:59 PM 22/04/19
+Target-Server: 
+Build-Jdk: 1.8.0_201
+Created-By: 
+Implementation-Vendor: 
+
