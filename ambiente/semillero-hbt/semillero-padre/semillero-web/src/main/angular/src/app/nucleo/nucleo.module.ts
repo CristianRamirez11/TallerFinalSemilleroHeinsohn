@@ -8,9 +8,11 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { ApoyoComponent } from './capa/main/apoyo/apoyo.component';
 import { ModeloComponent } from './capa/main/apoyo/modelo/modelo.component';
 import { CreacionClienteComponent } from './capa/main/creacion-cliente/creacion-cliente.component';
+import { GestionPedidosComponent } from './capa/main/gestion-pedidos/gestion-pedidos.component';
+import { FiltrosComponent } from './capa/main/gestion_pedidos/filtros/filtros.component';
 
 @NgModule({
-  declarations: [CapaComponent, EncabezadoComponent, MainComponent, PiepaginaComponent, ServiciosComponent, ApoyoComponent, ModeloComponent, CreacionClienteComponent],
+  declarations: [CapaComponent, EncabezadoComponent, MainComponent, PiepaginaComponent, ServiciosComponent, ApoyoComponent, ModeloComponent, CreacionClienteComponent, GestionPedidosComponent, FiltrosComponent],
   imports: [
     CommonModule
   ]
