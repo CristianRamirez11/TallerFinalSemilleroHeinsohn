@@ -1,0 +1,15 @@
+<form>
+	<h2>
+	  {{ idFactura }}
+	</h2>
+	<h3> Componente hijo / Presentacion</h3>
+	<div class="card">
+	  <div class="section">
+	    {{ valorTotal }}
+	  </div>
+	</div>
+	
+	<h2>Llamado servicios</h2>
+	<input value="Consultar Clientes" type="submit" (click)="consultarClientes()" />
+	<pre>{{ listaClientesDTO | json }}</pre>
+</form>
