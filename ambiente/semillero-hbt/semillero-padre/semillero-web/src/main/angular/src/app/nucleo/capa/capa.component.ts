@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-capa',
   templateUrl: './capa.component.html',
-  styleUrls: ['./capa.component.css']
+  //styleUrls: ['./capa.component.css']
 })
 export class CapaComponent implements OnInit {
 

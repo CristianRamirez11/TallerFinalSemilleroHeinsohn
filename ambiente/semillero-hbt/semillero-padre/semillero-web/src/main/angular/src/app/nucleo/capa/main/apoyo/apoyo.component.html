@@ -1,0 +1,30 @@
+<form>
+	<input value="Mostrar Factura" type="button" (click)="mostrar()" />
+	<input value="Ocultar Factura" type="button" (click)="ocultar()" />
+	<input value={{mostrarFactura}} disabled="true"/>
+
+	<div [ngStyle]="{'background-color':'green'}">
+		<fieldset *ngIf="mostrarFactura">
+			<legend>Formulario del Cliente</legend>
+		</fieldset>
+	</div>
+		
+	<section>
+	  <label for="name">Nombre</label>
+	  <input name="name" type="text" [(ngModel)]="cliente.nombre" placeholder="Nombre del Cliente" />
+	</section>
+	
+	<pre>{{ cliente | json }}</pre>
+	
+	<input value="Guardar" type="submit" (click)="guardar()" />
+	
+	<ul *ngIf="clientes.length>0; else empty">
+	  <li *ngFor="let cli of clientes">
+	    <span>{{ cli.nombre | uppercase}}</span>
+	    <input value="Borrar" type="button" (click)="borrar(cli)">
+	  </li>
+	</ul>
+	<ng-template #empty>
+	  <i>Sin datos</i>
+	</ng-template>
+</form>
