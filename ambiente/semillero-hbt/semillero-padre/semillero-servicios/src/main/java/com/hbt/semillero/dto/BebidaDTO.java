@@ -10,18 +10,28 @@ import java.io.Serializable;
  */
 public class BebidaDTO implements Serializable{
 	
+	/**
+	 * Serial
+	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * atributos de la clase bebida
+	 * Identificador unico de la bebida
 	*/
 	private int idBebida; 
 	
+	/**
+	 * Nombre de la bebida
+	 */
 	private String nombre; 
 	
+	/**
+	 * Precio de la bebida
+	 */
 	private double precio;
 
 	/**
+	 * Método que obtiene el valor de la propiedad idBebida
 	 * @return el idBebida
 	 */
 	public int getIdBebida() {
@@ -29,6 +39,7 @@ public class BebidaDTO implements Serializable{
 	}
 
 	/**
+	 * Método que asigna el valor de la propiedad idBebida
 	 * @param idBebida el idBebida a establecer
 	 */
 	public void setIdBebida(int idBebida) {
